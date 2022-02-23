@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    /* overflow: hidden; */
+}
+
+/* Daniel's Card */
+.daniel{
+   width: 480px;
+   text-align: left;
+   padding: 15px;
+   background-color:  hsl(263, 55%, 52%);
+   background-image: url('images/bg-pattern-quotation.svg');
+   background-repeat: no-repeat;
+   background-position-x: 350px;
+   border-radius: 10px;
+   box-shadow: 2px 2px 4px hsl(0, 0%, 81%);
+}
+.content{
+    opacity: 0.7;
+    color:hsl(0, 0%, 81%);
+}
+.bold{
+    font-weight: 500;
+    font-size: 19px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    color: white;
+    /* font-size: large; */
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+}
+.data{
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.blur{
+    color: hsl(0, 0%, 81%);
+    opacity: 0.5;
+}
+.photos{
+    border: 2px solid white;
+    border-radius: 90%;
+    height: 35px;
+}
+span{
+    color: white;
+}
+ 
+/* Jonathan Walters card */
+
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    width: 190px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 2px 2px 4px hsl(0, 0%, 81%) ;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+/* Jeannete card */
+
+.harmon{
+    background-color: white;
+    width: 190px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 2px 2px 4px hsl(0, 0%, 81%) ;
+    color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+}
+.bg-1{
+    color: hsl(217, 19%, 35%);
+}
+.bg-2{
+    color: hsl(219, 29%, 14%);
+}
+.bg > span{
+    color: hsl(217, 19%, 35%);
+}
+.white{
+    color: hsl(219, 29%, 14%);
+}
+
+/* Patricks card */
+
+.patrick{
+    width: 480px;
+    text-align: left;
+    padding: 15px;
+    background-color:  hsl(219, 29%, 14%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px hsl(0, 0%, 81%) ;
+    margin-left: 10px;
+}
+.ver{
+    color: white;
+}
+
+/* Kira Whittle card */
+
+.kira{
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 2px 2px 4px hsl(0, 0%, 81%) ;
+    color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+}
+
+/* Orientation */
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-right: 0px; */
+    margin-bottom: 10px;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 10px;
+}
+.view{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5%;
+    /* margin-top: calc(100% - 20px); */
+}
+
+/* Responsive code  */
+@media (max-width:1075px) {
+    .view{
+        margin-top: 3%;
+    }
+}
+@media (max-width:1023px) {
+
+    .view{
+        margin-top: 1%;
+    }
+  
+  
+    .daniel,.patrick{
+       height: 200px;
+       width: 410px;
+    }
+
+    .bold{
+        font-size: 16px;
+    }
+}
+@media (max-width: 900px) {
+   body{
+       font-size: 12px;
+   }
+    .bold{
+        font-size: 14px;
+    }
+  
+    .daniel{
+        height: 220px;
+        width: 290px;
+        background-position-x: right;
+     }
+     .patrick{
+         height: 220px;
+        width: 290px;
+     }
+     .photos{
+         height: 30px;
+     }
+}
+
+@media (max-width: 750px) {
+    .view{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .first{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .second{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .daniel{
+        height: 50%;
+        width: 70%;
+        margin-bottom: 15px;
+        background-position-x: 70%;
+    }
+    .harmon{
+        margin: 0px;
+        margin-bottom: 15px;   
+        width: 70%; 
+       
+    }
+    .jonathan{
+        margin: 0px;
+        width: 70%;
+    }
+    .kira{
+        margin: 0px;
+
+        width: 70%;
+    }
+    .patrick{
+        margin: 0px;
+        width: 70%;
+        height: 50%;
+    }
+    .second{
+        margin-right: 0px;
+    }
+}
